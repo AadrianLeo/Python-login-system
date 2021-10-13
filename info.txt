@@ -1,0 +1,26 @@
+1. Change the username and password of MySQL in the code as per your MySQL localhost.
+2. uncomment the code put your projects self.window/#your_project_name in login function in else part
+
+##################### this part on line 90 in the code ################ 
+#if open_main>0:
+                    #self.new_window=Toplevel(self.root)
+                    #self.app=HotelManagementSystem(self.new_window)
+                #else:
+                #    if not open_main:
+                #        return
+                
+for example:
+
+else:
+                open_main=messagebox.askyesno("ADMIN","ACCESS ONLY TO ADMIN")
+                if open_main>0:
+                    self.new_window=Toplevel(self.root)
+                    self.app=HotelManagementSystem/#Your_project_name(self.new_window)
+                else:
+                    if not open_main:
+                        return
+
+3. your project will open after the login process is done.
+4. Always run the login.py first to get the login page 
+5. let me know if there is an error
+6. thank you.
